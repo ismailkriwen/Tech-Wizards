@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  transition: color, background-color 0.2s linear;
+}
+
 body {
   height: 100%;
   font-family: "Open Sans", sans-serif;

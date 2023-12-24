@@ -19,7 +19,7 @@ export const About = () => {
               Tech Wizards
             </div>
             <div className="text-small font-light tracking-wider pt-1">
-              Crafting Tomorrow's Digital Magic Today
+              Crafting Tomorrow&apos;s Digital Magic Today
             </div>
             <div className="text-small tracking-wider md:w-3/4 pt-5">
               Welcome to Tech Wizards, where we empower aspiring developers to
