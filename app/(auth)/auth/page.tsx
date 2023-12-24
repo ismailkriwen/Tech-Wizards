@@ -1,5 +1,5 @@
 import AuthComponent from "@/app/(auth)/auth";
-import { getAuthSession } from "@/app/api/auth/[...nextauth]/route";
+import { getAuthSession } from "@/lib/auth-user";
 import { redirect } from "next/navigation";
 
 const AuthPage = async () => {

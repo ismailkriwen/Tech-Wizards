@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getAuthSession } from "@/app/api/auth/[...nextauth]/route";
+import { getAuthSession } from "@/lib/auth-user";
 
 const Dashboard = async () => {
   const session = await getAuthSession();
