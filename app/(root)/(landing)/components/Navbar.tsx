@@ -2,7 +2,7 @@
 
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
-import { ThemeSwitcher } from "./ThemeSwitcher";
+import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export const Navbar = () => {
   return (

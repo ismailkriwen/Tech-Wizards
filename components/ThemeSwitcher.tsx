@@ -6,14 +6,14 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export const ThemeSwitcher = () => {
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
   const [isSelected, setIsSelected] = useState(false);
   const changeTheme = () =>
-    resolvedTheme === "dark" ? setTheme("light") : setTheme("dark");
+    theme === "dark" ? setTheme("light") : setTheme("dark");
 
   useEffect(() => {
-    resolvedTheme === "dark" ? setIsSelected(true) : setIsSelected(false);
-  }, [resolvedTheme]);
+    theme === "dark" ? setIsSelected(true) : setIsSelected(false);
+  }, [theme]);
 
   return (
     <Switch
