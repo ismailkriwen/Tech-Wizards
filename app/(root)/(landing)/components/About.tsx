@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 
 export const About = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  const { resolvedTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <>
@@ -30,7 +30,7 @@ export const About = () => {
             <Button
               as={Link}
               href="/auth"
-              color={resolvedTheme === "dark" ? "danger" : "primary"}
+              color={theme === "dark" ? "danger" : "primary"}
               className="rounded-[4px] px-8"
             >
               Get Started
