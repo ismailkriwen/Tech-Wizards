@@ -37,7 +37,7 @@ export const About = () => {
             </Button>
             <Button
               variant="ghost"
-              color={resolvedTheme === "dark" ? "danger" : "primary"}
+              color={theme === "dark" ? "danger" : "primary"}
               className="rounded-[4px] px-8"
               onPress={onOpen}
               endContent={<AlertCircle className="w-4 h-4" />}
